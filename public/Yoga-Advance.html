@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind</title>
+  <!-- bootstrap -->
+  
+  <link rel="stylesheet" href="./css/bootstrap.min.css ">  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/validdation.js"></script>
+  <script src="./js/Yoga-Ajax.js"></script>
+  
+  <!-- jquery -->
+  <script src="./jquery/jquery.min.js"></script>
+
+  <!--Custom CSS only -->
+  <link rel="stylesheet" href="./css/Style.css ">
+
+</head>
+<header>
+  <!-- header -->
+  <div class="care-font-MSB ">
+      <nav class="navbar bg-white fixed-top">
+          <span class="h3 px-4"><img src="./img/images.jpg" alt="" width="38" height="42">Mind</span>
+          <div>
+            <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="http://localhost:8080/Home">Yoga</a></span>
+                  <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="http://localhost:8080/Meditation" style="color: black;">Meditation</a></span>
+         
+              <!-- <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="Home.html">Yoga</a></span>
+              <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="meditation.html" style="color: black;">Meditation</a></span>
+              <span class="h5 px-2">Meditation</span> -->
+          </div>
+          <div class="px-4">
+              <span><img class="" src="./img/user-image.svg" alt=""></span>
+              <a class="care-text-decoration-none text-dark h4 px-1" href="#loginmodal" data-bs-toggle="modal">Login</a>
+          </div>
+      </nav>
+  </div>
+   <!-- end of header -->
+</header>
+<br><br><br>
+<body>
+    
+  <div class="container text-center">
+    <table id="customers">
+        <thead>
+        <tr>
+        <th class="footable-sortable">Yoga Poses <em>(asanas)</em> with benefits<span class="footable-sort-indicator"></span></th>
+        <th class="footable-sortable">Pose Image<span class="footable-sort-indicator"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td style="text-align: left;">Archer’s Pose <em>(Akarna Dhanurasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Improves focus and memory</li>
+        <li>Deep stretches the arms and legs</li>
+        <li>Good for flat feet and sciatica</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15145" src="https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail-150x150.jpg" alt="Akarna Dhanurasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Akarna-Dhanurasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Bound Angle Headstand Pose <em>(Baddha Kona Sirsasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Relieves from depression, stress and anxiety</li>
+        <li>Strengthens arms, wrists and shoulders</li>
+        <li>Improves flexibility and balance</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15319" src="https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail-150x150.jpg" alt="Bound Angle Headstand Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Bound-Angle-Headstand-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Compass Pose <em>(Parivrtta Surya Yantrasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Improves digestion</li>
+        <li>Provides relief in respiratory disorders</li>
+        <li>Develops patience</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15109" src="https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg" alt="Compass Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Compass-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Dove Pose <em>(Vajra Kapotasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Increases blood circulation in spine and head</li>
+        <li>Strengthens shoulders and knees</li>
+        <li>Stretches quadriceps and chest muscles</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15322" src="https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg" alt="Vajra Kapotasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Vajra-Kapotasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Feathered Peacock Pose <em>(Pinch Mayurasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Strengthens arms, shoulders and chest</li>
+        <li>Tones back and buttocks</li>
+        <li>Great for anxiety and stress</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15324" src="https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg" alt="Pinch Mayurasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Pinch-Mayurasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Firefly Pose<em> (Tittibhasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Improves wrist strength and hand grip</li>
+        <li>Tones back of thighs and abdomen</li>
+        <li>Enhances balance and focus</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15325" src="https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg" alt="Firefly Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Firefly-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Half Bound Lotus Standing Pose <em>(Ardha Baddha Padmottanasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Great stretch for Achilles’ tendon and hamstrings</li>
+        <li>Beneficial in hormonal imbalances</li>
+        <li>Strengthens arms and legs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15332" src="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg" alt="Ardha Baddha Padmottanasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Baddha-Padmottanasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Half Wheel Pose <em>(Ardha Chakrasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Strengthens and tones chest muscles</li>
+        <li>Enhances sense of balance</li>
+        <li>Increases ankle and back strength</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15336" src="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg" alt="Ardha Chakrasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Chakrasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Headstand&nbsp;<em>(Sirsasana)</em><p></p>
+        <ul>
+        <li>Improves balance and focus</li>
+        <li>Strengthens upper body</li>
+        <li>Avoid if you have neck injury or migraine</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15011" src="https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg" alt="head stand - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/head-stand-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Knee to Ear Pose <em>(Karnapidasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Improves balance</li>
+        <li>Strengthens shoulders and knees</li>
+        <li>Stretches back and feet</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15340" src="https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg" alt="Karnapidasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Karnapidasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Lord of Dancers Pose <em>(Natarajasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Great hip opener and balance enhancer</li>
+        <li>Improves mental focus and back flexibility</li>
+        <li>Sculpts arms and calves</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15181" src="https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail-150x150.jpg" alt="Natarajasana (Dancer Pose) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/09/Natarajasana-Dancer-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Lotus in Shoulder Stand Pose <em>(Padma Sarvangasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Strengthens shoulders and arms</li>
+        <li>Corrects posture</li>
+        <li>Improves memory and focus</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15366" src="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg" alt="Upward Lotus in Shoulder Stand Pose (Urdhva Padmasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Lotus-in-Shoulder-Stand-Pose-Urdhva-Padmasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><em>One Legged Wheel Pose&nbsp;<em>(Eka Pada Chakrasana)</em></em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Improves balance and focus</li>
+        <li>Strengthens arms, shoulders and ankles</li>
+        <li>Tones back, hips and calves</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15373" src="https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg" alt="One Legged Wheel Pose (Eka Pada Chakrasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/One-Legged-Wheel-Pose-Eka-Pada-Chakrasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">One Legged Headstand <em>(Eka Pada Sirsasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Beneficial in mental stress, depression, anxiety and fatigue</li>
+        <li>Stretches legs and ankles</li>
+        <li>Strengthens back, elbows and forearms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15374" src="https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg" alt="eka_pada_sirshasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/eka_pada_sirshasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Peacock Pose <em>(Mayurasana)</em>><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Good for working on focus</li>
+        <li>Strengthens and tones arms and upper back</li>
+        <li>Tones lower body and back</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15013" src="https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail-150x150.jpg" alt="peacock pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/pecock-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Pose Dedicated to the Sage Koundinya I <em>(Eka Pada Koundinyanasana I)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Strengthens arms</li>
+        <li>Improves balance and focus</li>
+        <li>Stretches groin and legs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15375" src="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg" alt="Pose Dedicated to the Sage Koundinya I thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-I-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Pose Dedicated to the Sage Koundinya II <em>(Eka Pada Koundinyanasana II)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Corrects body alignment</li>
+        <li>Tones whole body</li>
+        <li>Strengthens arms and wrists</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15420" src="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg" alt="Pose Dedicated to the Sage Koundinya II thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Pose-Dedicated-to-the-Sage-Koundinya-II-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Royal / King Pigeon Pose <em>(Raja Kapotasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Ideal for those ladies who are trying to conceive</li>
+        <li>Improves posture</li>
+        <li>Relieves back pain</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15107" src="https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg" alt="king pigeon pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/king-pigeon-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Unsupported Shoulder Stand <em>(Niralamba Sarvangasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Strengthens shoulders and neck</li>
+        <li>Improves balance and mental focus</li>
+        <li>Provides relief in stress and anxiety</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15392" src="https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg" alt="Unsupported Shoulder Stand (Niralamba Sarvangasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Unsupported-Shoulder-Stand-Niralamba-Sarvangasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Upward Facing Forward Bend Pose <em>(Urdhva Mukha Paschimottanasana)</em><p></p>
+        <ul>
+        <li>Level: Advanced</li>
+        <li>Enhances sense of balance</li>
+        <li>Stretches whole back and legs</li>
+        <li>Reduces stress and feelings of panic</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15394" src="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg" alt="Upward Facing Forward Bend Pose (Urdhva Mukha Paschimottanasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Forward-Bend-Pose-Urdhva-Mukha-Paschimottanasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        </tbody>
+        </table>
+  </div>
+    <br><br><br>
+    <!-- footer -->
+   <div class="footer"style="background-color:#000">
+    <div class="container py-4" >
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <a href="">
+                                <img src="https://static.cure.fit/assets/images/cf-logo.svg" alt="">
+                            </a><br>
+                            <p class="description">
+                                At cure.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, and medical & lifestyle care hassle-free. #BeBetterEveryDay
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4 col-lg col-xl-3 col-xs- ">
+                        <div class="single-footer-widget">
+                            <ul class="quick_links "  >   
+                                <li> 
+                                <a href='' style=" color:white" rel="" target="_blank">CONTACT US</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">CULT FRANCHISE</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">PARTNER.FIT</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">TALKS</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">CAREERS</a>
+                                </li>
+                            </ul>
+
+                          
+
+                        </div>
+                    </div>
+                    
+                        <div class="play-store-container col-sm-3">
+                            <div class="app-store-image col-xs-6">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/app-store.svg" alt="Download curefit app on apple play store">
+                                </div>
+                            </div>
+                            <div class="play-store-image col-xs-6 ">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/play-store.svg" alt="Download curefit app on google play store">
+                                </div>
+                            </div>
+                        </div>
+                        
+                           
+                            
+                </div>
+                
+    </div>
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+         <div class="list-inline">
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Contact Us</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">FAQ</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Terms &amp; conditions</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Privacy Policy</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Refund Policy</a>
+      
+         </div>
+        </div>
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 text-right">
+      
+         <div class="list-inline">
+           <a href="" data-toggle="tooltip" data-placement="bottom" title data-original-title="FaceBook" style="padding:5px">
+             <i class="fab fa-facebook"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Twitter" style="padding:5px">
+                   <i class="fab fa-twitter"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Google Plus" style="padding:5px">
+                 <i class="fab fa-google-plus"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="LinkedIn" style="padding:5px">
+      
+               <i class="fab fa-linkedin"></i>
+           </a>
+      
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Pinterest" style="padding:5px">
+                 <i class="fab fa-pinterest"></i>
+           </a>            
+         </div>
+      
+         
+        </div>
+      </div>  
+    </div>
+  </div>
+ <!--end of footer -->
+
+
+  <!-- Login Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"style="overflow: auto;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form id="loginForm">
+            <div class="form-group"><br>
+              <input type="email" class="form-control" id="email1" required placeholder="Your email address..." ><br>
+              <span id="email1-error"></span><br>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" required placeholder="Your password..." ><br>
+            </div>
+            <span id="result"></span><br><br>
+            <button type="button" id="login-btn" class="btn btn-info text-center" style="width: 70%;">Login</button>
+          </form>   
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        
+        <div class="signup-section">Not a member yet? <a href="" data-toggle="modal" data-bs-dismiss="modal"  data-target="#registermodal"> Register</a>.</div>
+        <!-- <li><a href="" data-toggle="modal" data-target="#registermodal">Register</a></li> -->
+      </div>
+  </div>
+  </div>
+</div>
+<!-- end of Login Modal -->
+
+<!-- register modal -->
+<div class="modal fade" id="registermodal" role="dialog" tabindex="-1" aria-hidden="true" style="overflow: auto;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-title text-center">
+          <span > <h2>Register</h2> </span>
+        </div>
+        <div class="modal-body">
+        <div class="d-flex flex-column text-center">
+          <form id="yoga-reg-form">
+            <div class="form-group"><br>
+              <input type="text" class="form-control" name="name" id="yoga-reg-name" placeholder="Name.." /><br>
+              <span id="yoga-reg-name-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="email" class="form-control" name="email" id="yoga-reg-email" placeholder="Email..."/><br>
+              <span id="yoga-reg-email-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="number"class="form-control"  name="age" id="yoga-reg-age" placeholder="Age..."><br>
+
+            </div>
+            <div class="form-group"><br>
+              <input  type="password" class="form-control" name="password" id="yoga-reg-pass" placeholder="Password..."/><br>
+              <span id="yoga-reg-pass-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="password" class="form-control" name="password" id="yoga-reg-repass" placeholder="Retype Password..."/><br>
+              <span id="yoga-reg-repass-error"></span><br>
+            </div>
+            <span id="yoga-reg-result"></span>
+            <br><button type="button" id="reg-save-btn" class="btn btn-info text-center " style="width: 70%;">Register</button><br><br>
+          </form>   
+      </div>
+    </div>
+    </div>
+    
+    <!-- <div class="modal-footer d-flex justify-content-center">
+        
+      <div class="signup-section">Already a member...<a href="" data-toggle="modal" data-bs-dismiss="modal"  data-target="#loginmodal"> Log In</a>.</div>
+      
+    </div> -->
+      </div>
+ 
+</div>
+<!-- end of register modal -->
+</body>
+</html> 

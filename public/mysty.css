@@ -1,0 +1,41 @@
+@import "compass/css3";
+
+@import "compass/css3";
+
+body{
+  background: blue;
+}
+
+.container{
+  width: 1000px;
+  height: 500px;
+  background: white;
+  overflow: hidden;
+  position: relative;
+  margin-left: 0px;
+} 
+.diagonal{
+  height: 1200px;
+  width: 500px;
+  overflow: hidden;
+  /* @include rotate(25deg); */
+   position: absolute;
+   top: -200px;
+} 
+  img{
+     /* @include rotate(-25deg); */
+    margin-top: -100px;
+      margin-left: -200px;
+  }
+    
+    
+  #d0{
+      left: 50%;
+      
+    }
+    
+    #d1{
+      right: 50%;
+    } 
+
+

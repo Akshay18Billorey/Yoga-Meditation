@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css ">  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/validdation.js"></script>
+    <script src="./js/Yoga-Ajax.js"></script>
+    
+    <!-- jquery -->
+    <script src="./jquery/jquery.min.js"></script>
+
+    <!--Custom CSS only -->
+    <link rel="stylesheet" href="./css/Style.css ">
+</head>
+<body>
+    <form   >
+        <input type='file' id='fileimg' />
+        <input type='submit' value='Upload' id='but_upload'>
+      </form>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+    $("#but_upload").on("click",function(){
+        // var formData = new FormData(this);
+        //var ffile = $("#fileimg").val();
+        var myFile = document.getElementById('fileimg'); 
+        var files = myFile.files;
+        console.log(ffile);
+        
+        $.ajax({
+            
+            type:"POST",
+
+            // dataType: 'file',
+            // data:formData,
+            data: {file:files},
+            // cache:false,
+            // contentType: false,
+            // processData: false,
+            //data: {file:ffile},
+            url :"http://localhost:8080/api-Image",
+            success:function(data){
+                if(data==0)
+                {
+                    
+                    alert ("file upload");
+
+                }else{
+                    alert ("file not upload");
+                }
+            }
+        });
+    });
+});
+</script>

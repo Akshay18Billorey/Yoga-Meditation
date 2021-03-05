@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mind</title>
+  <!-- bootstrap -->
+  
+  <link rel="stylesheet" href="./css/bootstrap.min.css ">  
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/validdation.js"></script>
+  <script src="./js/Yoga-Ajax.js"></script>
+  
+  <!-- jquery -->
+  <script src="./jquery/jquery.min.js"></script>
+
+  <!--Custom CSS only -->
+  <link rel="stylesheet" href="./css/Style.css ">
+
+</head>
+<header>
+  <!-- header -->
+  <div class="care-font-MSB ">
+      <nav class="navbar bg-white fixed-top">
+          <span class="h3 px-4"><img src="./img/images.jpg" alt="" width="38" height="42">Mind</span>
+          <div>
+            <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="http://localhost:8080/Home">Yoga</a></span>
+                  <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="http://localhost:8080/Meditation" style="color: black;">Meditation</a></span>
+         
+              <!-- <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="Home.html">Yoga</a></span>
+              <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="meditation.html" style="color: black;">Meditation</a></span>
+              <span class="h5 px-2">Meditation</span> -->
+          </div>
+          <div class="px-4">
+              <span><img class="" src="./img/user-image.svg" alt=""></span>
+              <a class="care-text-decoration-none text-dark h4 px-1" href="#loginmodal" data-bs-toggle="modal">Login</a>
+          </div>
+      </nav>
+  </div>
+   <!-- end of header -->
+</header>
+<br><br><br>
+<body>
+    
+  <div class="container text-center">
+    <table  id="customers">
+        <thead>
+        <tr>
+        <th class="footable-sortable">Yoga Poses <em>(asanas)</em> with benefits<span class="footable-sort-indicator"></span></th>
+        <th class="footable-sortable">Pose Image<span class="footable-sort-indicator"></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td style="text-align: left;">Bharadvaja’s Twist <em>(Bharadvajasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Tones waist and improves BMR</li>
+        <li>Relaxes spine and neck</li>
+        <li>Opens chest cavity for Pranayama</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15150" src="https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail-150x150.jpg" alt="bharadvajasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/bharadvajasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Big Toe Pose <em>(Padangusthasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Ideal for women who are trying to get pregnant</li>
+        <li>Improves digestion</li>
+        <li>Relieves headache</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15191" src="https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg" alt="Big Toe Pose (Padangusthasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/09/Big-Toe-Pose-Padangusthasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Bow Pose <em>(Dhanurasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Tones lower back, thighs and buttocks</li>
+        <li>Stretches quads, ankles and forearms</li>
+        <li>Opens chest cavity and strengthens lungs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15137" src="https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg" alt="Bow-pose-Dhanurasana  thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Bow-pose-Dhanurasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Bridge Pose <em>(Setu Bandhasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens neck and shoulders</li>
+        <li>Massages abdominal organs and kidneys</li>
+        <li>Tones lower back and calves</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15151" src="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail-150x150.jpg" alt="Bridge Pose (Setu Bandha Sarvangasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-Setu-Bandha-Sarvangasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Bridge Pose on Elbows <em>(Dvapada Dhanurasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Beneficial in stress, depression and anxiety</li>
+        <li>Improves neck and spine health</li>
+        <li>Enhances memory and focus</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15418" src="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg" alt="Bridge Pose on Elbows thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Bridge-Pose-on-Elbows-thumbnail1.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Camel Pose <em>(Ustrasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens knees and back</li>
+        <li>Enhances balance and flexibility</li>
+        <li>Improves concentration</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15006" src="https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg" alt="camel pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/camel-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Cobra Pose <em>(Bhujangasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves focus and retention</li>
+        <li>Enhances cardiovascular capacity</li>
+        <li>Tones abdomen and lower back</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15133" src="https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail-150x150.jpg" alt="Cobra Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Cobra-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Cow Face Pose <em>(Gomukhasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves back flexibility and stretches shoulders</li>
+        <li>Enhances lung capacity</li>
+        <li>Opens up hips and corrects seated posture</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15134" src="https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg" alt="Cow's-face-pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Cows-face-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Crane / Crow Pose <em>(Bakasana / Kakasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Enhances arm and shoulders strength</li>
+        <li>Great for spine and neck</li>
+        <li>Improves digestion and balances hormones</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15136" src="https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg" alt="Crane Pose (Bakasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Crane-Pose-Bakasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Dolphin Pose<p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Brings relief to asthma patients</li>
+        <li>Stress-reliever</li>
+        <li>Prevents osteoporosis</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15108" src="https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg" alt="dolphin pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/dolphin-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Eagle Pose <em>(Garudasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Great for balance</li>
+        <li>Good for respiratory problems</li>
+        <li>Tones calves, thighs and arms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15008" src="https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg" alt="eagle pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/eagle-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Elimination / Garland Pose <em>(Malasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Massages abdominal organs and improves digestion</li>
+        <li>Tones calves and hips</li>
+        <li>Strengthens ankles and improves balance</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15206" src="https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail-150x150.jpg" alt="Garland Pose (Malasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Garland-Pose-Malasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Extended Hand to Big Toe Pose <em>(Utthita Hasta Padangustasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves balance and focus</li>
+        <li>Stimulates urinary and reproductive organs</li>
+        <li>Beneficial in weight loss</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15323" src="https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg" alt="Extended Hand to Big Toe Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Extended-Hand-to-Big-Toe-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Fish out of Hero Pose<em> (Matsyendra Virasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deep stretches thighs and lower abdomen</li>
+        <li>Induces feeling of happiness and calms mind</li>
+        <li>Relieves from upper back pain</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15326" src="https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg" alt="Matsyendra Virasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Matsyendra-Virasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Full Boat Pose <em>(Navasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Helps get rid of belly fat</li>
+        <li>Improves digestion</li>
+        <li>Tones back, thighs, and arms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Boat-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15138" src="https://workouttrends.com/wp-content/uploads/2014/08/Boat-Pose-thumbnail-e1413464788465-150x150.jpg" alt="Boat-Pose  thumbnail" width="150" height="150"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Full Pigeon Pose <em>(Purna Kapotasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deep stretches abdomen</li>
+        <li>Beneficial in thyroid disorders</li>
+        <li>Tones hips, calves and arms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15330" src="https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg" alt="Purna Kapotasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Purna-Kapotasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Gate Pose <em>(Parighasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens knees and toes</li>
+        <li>Deep stretches abdomen and thighs</li>
+        <li>Balances metabolism and aids in fat loss</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15331" src="https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg" alt="GATE POSE (Parighasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/GATE-POSE-Parighasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Half Bow Pose <em>(Ardha Dhanurasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves balance and limb strength</li>
+        <li>Increases joint health</li>
+        <li>Deep stretches abdomen and thighs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15333" src="https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg" alt="Half Bow Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Half-Bow-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Half Lord of Fishes Pose <em>(Ardha Matsyendrasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Beneficial in weight loss and asthma</li>
+        <li>Improves spine and hip flexibility</li>
+        <li>Massages abdominal organs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15146" src="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail-150x150.jpg" alt="Ardha Matsyendrasana (Half Lord of the Fishes Pose) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Ardha-Matsyendrasana-Half-Lord-of-the-Fishes-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Hare / Rabbit Pose <em>(Shashankasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Beneficial in urinary and reproductive disorders</li>
+        <li>Deep stretches shoulders, arms and wrists</li>
+        <li>Strengthens knees</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15337" src="https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg" alt="Rabbit Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Rabbit-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Head to Knee Pose <em>(Janu Sirsasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Great stretch for hamstrings and calves</li>
+        <li>Increases metabolism</li>
+        <li>Strengthens back and shoulders</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15338" src="https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg" alt="Head to Knee Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Head-to-Knee-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Heron Pose <em>(Krounchasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves posture and balance</li>
+        <li>Deeply stretches thighs and calves</li>
+        <li>Good for spine health and memory</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15339" src="https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg" alt="Heron Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Heron-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Intense Side Stretch Pose / Pyramid pose <em>(Parsvottanasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches back, groin and inner thighs</li>
+        <li>Tones abdomen and lower body</li>
+        <li>Great for weight and fat loss</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15012" src="https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg" alt="pyramid pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/pyramid-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Knee-Chest-Chin Pose <em>(Ashtanga Namaskara)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Beneficial in back pain</li>
+        <li>Strengthens whole body</li>
+        <li>Stimulates abdominal and reproductive organs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15341" src="https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg" alt="Ashtanga Namaskara thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Ashtanga-Namaskara-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Lizard Pose <em>(Uttana Pristhasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches shoulders, hips and groin</li>
+        <li>Shapes thighs and calves</li>
+        <li>Good for flat feet and sciatica</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15345" src="https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg" alt="Lizard Pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Lizard-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Lord of Fishes Pose II <em>(Padma Matsyendrasana)</em><p></p>
+        <ul>
+        <li>Level: Beginner</li>
+        <li>Stretches shoulders, abs and hamstrings</li>
+        <li>Tones back and hips</li>
+        <li>Aids in weight loss</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15365" src="https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg" alt="Padma Matsyendrasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Padma-Matsyendrasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Marichi’s Pose <em>(Marichyasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches back, hips and hamstrings</li>
+        <li>Good for flat feet and digestive problems</li>
+        <li>Relaxes shoulders and arms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15369" src="https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg" alt="marichis-pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/marichis-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Monkey Pose <em>(Hanumanasana / Anjaneyasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deep stretches hips and groin</li>
+        <li>Improves concentration and fact retention</li>
+        <li>Great for stretching chest, feet and ankles</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15370" src="https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg" alt="Monkey Pose (Hanumanasana -Anjaneyasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Monkey-Pose-Hanumanasana-Anjaneyasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Noose Pose <em>(Pasasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Improves seated balance and posture</li>
+        <li>Strengthens knees and ankles</li>
+        <li>Enhances focus and flexibility</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15179" src="https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail-150x150.jpg" alt="noose pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/noose-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">One Legged Bridge Pose <em>(Eka Pada Setuasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens back, ankles and shoulders</li>
+        <li>Great stretch for abdomen and quadriceps</li>
+        <li>Beneficial for urinary system function</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15371" src="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg" alt="Eka Pada Setuasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Setuasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;"><em>One Legged Dog / Downward Dog (Split) Pose <em>(Eka Pada Svanasana)</em></em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Enhances hamstring flexibility and hip flexion</li>
+        <li>Stretches Achilles’ tendons and groin</li>
+        <li>Improves digestion and balance</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15310" src="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail-150x150.jpg" alt="Eka Pada Svanasana thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Eka-Pada-Svanasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Plow Pose <em>(Halasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deep stretches back</li>
+        <li>Strengthens shoulders and neck</li>
+        <li>Tones abdomen and helps get relief from obesity</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15212" src="https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail-150x150.jpg" alt="Plow Pose (Halasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Plow-Pose-Halasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Reclined Hero Pose <em>(Supta Virasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Relieves from lower back issues</li>
+        <li>Stretches abdomen and quadriceps</li>
+        <li>Relaxes mind and helps in fertility</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15376" src="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg" alt="Reclined Hero Pose (Supta Virasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Hero-Pose-Supta-Virasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Reclined Thunderbolt Pose <em>(Supta Vajrasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens shoulders and elbows</li>
+        <li>Relieves from upper back pain and stiffness</li>
+        <li>Stretches chest muscles and helps breathe deeper</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15377" src="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg" alt="Reclined Thunderbolt Pose (Supta Vajrasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Reclined-Thunderbolt-Pose-Supta-Vajrasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Revolved Extended Side Angle Pose <em>(Parivritta Parsvokonasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches groin and legs</li>
+        <li>Helps trim down belly fat and tone abdomen</li>
+        <li>Strengthens ankles, knees and wrist</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15381" src="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg" alt="Revolved Extended Side Angle Pose (Parivritta Parsvokonasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Extended-Side-Angle-Pose-Parivritta-Parsvokonasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Revolved Triangle Pose <em>(Parivritta Trikonasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches hamstrings and Achilles’ tendon</li>
+        <li>Relaxes back and hips</li>
+        <li>Tones abdomen and shoulders</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png"><img loading="lazy" class="aligncenter size-full wp-image-15382" src="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png" alt="Revolved Triangle Pose (Parivritta Trikonasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png 300w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Revolved-Triangle-Pose-Parivritta-Trikonasana-thumbnail.png 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Scale Pose <em>(Tolasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens arms, shoulders and chest</li>
+        <li>Great for balance enhancement and hand grip</li>
+        <li>Improves concentration</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15384" src="https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg" alt="Scale Pose (Tolasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Scale-Pose-Tolasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Scorpion Pose <em>(Vrschikasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens arms and shoulders</li>
+        <li>Great for flexibility and back pain</li>
+        <li>Improves mental focus</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15015" src="https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg" alt="Scorpion Pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Scorpion-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Side Crane Pose <em>(Parsva Bakasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens arms, shoulders and wrists</li>
+        <li>Tones back and abdomen</li>
+        <li>Improves focus and balance</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15386" src="https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg" alt="Side Crane Pose (Parsva Bakasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Side-Crane-Pose-Parsva-Bakasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Tortoise Pose <em>(Kurmasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deeply stretches back and hips</li>
+        <li>Stimulates heart and lungs</li>
+        <li>Strengthens shoulders and lower back</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15391" src="https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg" alt="Tortoise Pose (Kurmasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Tortoise-Pose-Kurmasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Triangle Pose <em>(Trikonasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Stretches inner thighs and groin</li>
+        <li>Tones waist and aids in fat loss</li>
+        <li>Helps with balance issues</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15014" src="https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg" alt="Triangle Pose - thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Triangle-Pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Upward Facing Two-Foot Staff Pose <em>(Dvi Pada Viparita Dandasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Deeply stretches thighs, abdomen and chest</li>
+        <li>Great for athletes</li>
+        <li>Makes body flexible and agile</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15395" src="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg" alt="Upward Facing Two-Foot Staff Pose (Dvi Pada Viparita Dandasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Two-Foot-Staff-Pose-Dvi-Pada-Viparita-Dandasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Upward Plank Pose <em>(Purvottanasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens arms and chest muscles</li>
+        <li>Stretches ankles and knees</li>
+        <li>Tones lower back</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15399" src="https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg" alt="upward Plank pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/upward-Plank-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Upward-Facing Dog <em>(Adho Mukha Svanasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Helpful in thyroid issues</li>
+        <li>Tones back, thighs and calves</li>
+        <li>Strengthens shoulders and arms</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15398" src="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg" alt="Upward-Facing Dog (Adho Mukha Svanasana) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Upward-Facing-Dog-Adho-Mukha-Svanasana-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Warrior III Pose <em>(Virabhadrasana III)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Strengthens and tones the whole body</li>
+        <li>Improves memory</li>
+        <li>Corrects posture and improves balance</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-full wp-image-15106" src="https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg" alt="warrior III pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/warrior-III-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Wheel Pose <em>(Chakrasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Induces feelings of happiness and relieves from anger and frustration</li>
+        <li>Great for digestive, urinary and reproductive system</li>
+        <li>Strengthens arms and legs</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15141" src="https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail-150x150.jpg" alt="Wheel pose thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Wheel-pose-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        <tr>
+        <td style="text-align: left;">Wide Legged Standing Forward Bend Pose <em>(Prasarita Paddotanasana)</em><p></p>
+        <ul>
+        <li>Level: Intermediate</li>
+        <li>Provides relief from stress and obesity</li>
+        <li>Strengthens ankles and wrists</li>
+        <li>Enhances memory and flexibility</li>
+        </ul>
+        </td>
+        <td><a href="https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg"><img loading="lazy" class="aligncenter size-thumbnail wp-image-15213" src="https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail-150x150.jpg" alt="Prasarita Padottanasana (Wide-Legged Forward Bend) thumbnail" width="150" height="150" srcset="https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg 300w, https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg 1024w, https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg 1536w, https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg 2048w, https://workouttrends.com/wp-content/uploads/2014/08/Prasarita-Padottanasana-Wide-Legged-Forward-Bend-thumbnail.jpg 720w" sizes="(max-width: 150px) 100vw, 150px"></a></td>
+        </tr>
+        </tbody>
+        </table> 
+  </div>
+    <br><br><br>
+    <!-- footer -->
+   <div class="footer"style="background-color:#000">
+    <div class="container py-4" >
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <a href="">
+                                <img src="https://static.cure.fit/assets/images/cf-logo.svg" alt="">
+                            </a><br>
+                            <p class="description">
+                                At cure.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, and medical & lifestyle care hassle-free. #BeBetterEveryDay
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4 col-lg col-xl-3 col-xs- ">
+                        <div class="single-footer-widget">
+                            <ul class="quick_links "  >   
+                                <li> 
+                                <a href='' style=" color:white" rel="" target="_blank">CONTACT US</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">CULT FRANCHISE</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">PARTNER.FIT</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">TALKS</a>
+                                </li>
+                                <li>
+                                    <a href="" style="color:white" rel="" target="_blank">CAREERS</a>
+                                </li>
+                            </ul>
+
+                          
+
+                        </div>
+                    </div>
+                    
+                        <div class="play-store-container col-sm-3">
+                            <div class="app-store-image col-xs-6">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/app-store.svg" alt="Download curefit app on apple play store">
+                                </div>
+                            </div>
+                            <div class="play-store-image col-xs-6 ">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/play-store.svg" alt="Download curefit app on google play store">
+                                </div>
+                            </div>
+                        </div>
+                        
+                           
+                            
+                </div>
+                
+    </div>
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
+         <div class="list-inline">
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Contact Us</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">FAQ</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Terms &amp; conditions</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Privacy Policy</a>
+           <a class='content' style="color:white" href="" target="_blank" rel="noreferrer">Refund Policy</a>
+      
+         </div>
+        </div>
+        <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 text-right">
+      
+         <div class="list-inline">
+           <a href="" data-toggle="tooltip" data-placement="bottom" title data-original-title="FaceBook" style="padding:5px">
+             <i class="fab fa-facebook"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Twitter" style="padding:5px">
+                   <i class="fab fa-twitter"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Google Plus" style="padding:5px">
+                 <i class="fab fa-google-plus"></i>
+           </a>
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="LinkedIn" style="padding:5px">
+      
+               <i class="fab fa-linkedin"></i>
+           </a>
+      
+           <a href="" data-toggle="tooltip" data-placement="bottom" title
+               data-original-title="Pinterest" style="padding:5px">
+                 <i class="fab fa-pinterest"></i>
+           </a>            
+         </div>
+      
+         
+        </div>
+      </div>  
+    </div>
+  </div>
+ <!--end of footer -->
+
+
+  <!-- Login Modal -->
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"style="overflow: auto;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-title text-center">
+          <h4>Login</h4>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form id="loginForm">
+            <div class="form-group"><br>
+              <input type="email" class="form-control" id="email1" required placeholder="Your email address..." ><br>
+              <span id="email1-error"></span><br>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" id="password1" required placeholder="Your password..." ><br>
+            </div>
+            <span id="result"></span><br><br>
+            <button type="button" id="login-btn" class="btn btn-info text-center" style="width: 70%;">Login</button>
+          </form>   
+      </div>
+    </div>
+      <div class="modal-footer d-flex justify-content-center">
+        
+        <div class="signup-section">Not a member yet? <a href="" data-toggle="modal" data-bs-dismiss="modal"  data-target="#registermodal"> Register</a>.</div>
+        <!-- <li><a href="" data-toggle="modal" data-target="#registermodal">Register</a></li> -->
+      </div>
+  </div>
+  </div>
+</div>
+<!-- end of Login Modal -->
+
+<!-- register modal -->
+<div class="modal fade" id="registermodal" role="dialog" tabindex="-1" aria-hidden="true" style="overflow: auto;">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-title text-center">
+          <span > <h2>Register</h2> </span>
+        </div>
+        <div class="d-flex flex-column text-center">
+          <form id="yoga-reg-form">
+            <div class="form-group"><br>
+              <input type="text" name="name" id="yoga-reg-name" placeholder="Name.." /><br>
+              <span id="yoga-reg-name-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="email" name="email" id="yoga-reg-email" placeholder="Email..."/><br>
+              <span id="yoga-reg-email-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="number" name="age" id="yoga-reg-age" placeholder="Age..."><br>
+
+            </div>
+            <div class="form-group"><br>
+              <input  type="password" name="password" id="yoga-reg-pass" placeholder="Password..."/><br>
+              <span id="yoga-reg-pass-error"></span><br>
+            </div>
+            <div class="form-group"><br>
+              <input  type="password" name="password" id="yoga-reg-repass" placeholder="Retype Password..."/><br>
+              <span id="yoga-reg-repass-error"></span><br>
+            </div>
+            <span id="yoga-reg-result"></span>
+            <br><button type="button" id="reg-save-btn" class="btn btn-info text-center " style="width: 70%;">Register</button><br><br>
+          </form>   
+      </div>
+    </div>
+    
+    <!-- <div class="modal-footer d-flex justify-content-center">
+        
+      <div class="signup-section">Already a member...<a href="" data-toggle="modal" data-bs-dismiss="modal"  data-target="#loginmodal"> Log In</a>.</div>
+      
+    </div> -->
+      </div>
+ 
+</div>
+<!-- end of register modal -->
+</body>
+</html> 

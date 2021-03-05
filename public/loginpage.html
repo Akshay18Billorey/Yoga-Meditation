@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.css ">
+    <link rel="stylesheet" href="./css/bootstrap.min.css ">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.rtl.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-reboot.rtl.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-utilities.rtl.min.css">
+    
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <!-- js -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- <script src="./js/bootstrap.esm.js"></script> -->
+    <script src="./js/bootstrap.js"></script>
+    <!-- jquery -->
+    <script src="./jquery/jquery.min.js"></script>
+
+    <!--Custom CSS only -->
+    <link rel="stylesheet" href="./css/Style.css ">
+
+  </head>
+  <body>
+    <header>
+      <div class="care-font-MSB ">
+          <nav class="navbar bg-white fixed-top">
+              <span class="h3 px-4"><img src="./img/images.jpg" alt="" width="38" height="42">Mind</span>
+              <div>
+                  <span class="h5 text-primary px-2"><a class="care-text-decoration-none" href="#">Yoga</a></span>
+                  <span class="h5 px-2">Meditation</span>
+              </div>
+              <div class="px-4">
+                  <span><img class="" src="./img/user-image.svg" alt=""></span>
+                  <!-- <button type="button" id="logout" class="btn btn-light" >Log Out</button> -->
+                  <a type="button" id="logout" class="care-text-decoration-none text-dark h4 px-1" >Log Out</a>
+                  <!-- <a class="care-text-decoration-none text-dark h4 px-1" href="#loginmodal" data-bs-toggle="modal">Login</a> -->
+              </div>
+          </nav>
+      </div>
+  </header>
+<script>
+    $("#logout").on("click",function() {
+        //window.localStorage.removeItem("token"); //remove one item
+         localStorage.removeItem("token");
+        alert ("Logout Successfully");
+        window.location.assign('http://localhost:8080/Home');
+});
+  
+//   localStorage.token = data['token'];
+</script>
+  
+
+
+
+<!-- <img src="./img/Homepage.jpg" alt="Homepage Image"width="1350" height="auto">  -->
+
+<div></div>
+<div class="box">
+  <img src="./img/Homepage.jpg" class="img-fluid" alt="Responsive image">
+  <!-- <img src="./img/Homepage.jpg" alt="Flying Kites"width="1350" height="auto"> -->
+    <div class="text">
+        <h1 style="font-size:4vw;">Practice At Home With the <br> Top Yoga Teachers</h1>
+        <p style="font-size:2vw;"> Stream hundreds of expertly led yoga & <br> meditation classes on any device.</p>
+    </div>
+</div>
+
+
+
+
+<br><br><br>
+
+<!-- <div class="row">
+  <div class="col">
+    <div class="container text-center">
+      <div class="text">
+      <br><br>
+      <h1 class="Yoga-3vw">Make yoga part of your life<br><br></h1>
+      <p class="Yoga-2vw">Sharing the love of yoga to create <br> positive change in the world <br><br><br></p>
+    
+    </div>
+  </div>
+  </div>
+  <div class="col">
+    <div class="container text-center">
+      <video width="auto" controls>
+        <source src="img\Yoga Videos.mp4" type="video/mp4">
+        <source src="img\home-new-v1.mp4" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+    
+  </div>
+  
+</div> -->
+
+
+
+
+
+
+
+<!-- <div class="container-fluid backimg">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col">
+      
+    </div>
+  </div>
+  
+ 
+ </div> -->
+<br><br>
+
+<div class="container-fluid Yoga_Heading">
+<p class="Yoga-2vw">PRACTICE</p>
+<h2 class="Yoga-3vw">AT HOME OR ON-THE-GO ALWAYS ON YOUR TIME</h2>
+<h5 class="Yoga-2vw">Customize your membership and grow your <br> practice by choosing from our expansive library of <br> classes, courses, and articles.</h5>
+
+</div>
+
+
+
+
+
+
+<br><br>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="img-fluid" src="img/offerimg1.jpg" alt="Los Angeles" width="1350" height="278">
+            
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/offerimg2.jpg" alt="Chicago" width="1350" height="278">
+             
+        </div>
+        <div class="carousel-item">
+          <img class="img-fluid" src="img/offerimg3.jpg" alt="New York" width="1350" height="278">
+            
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div class="container-fluid Yoga_Heading">
+      <p class="Yoga-3vw">LIMITLESS LEARNING</p>
+      <h2 class="Yoga-2vw">SEE OUR CURATED CONTENT</h2>
+      <h5 class="Yoga-2vw">Yoga International’s library of <br> reference material is always up <br> to date and created by industry professionals.</h5>
+      
+      </div>
+
+
+
+   
+    <img src="./img/Challenge.webp" class="img-fluid" alt="Responsive image">
+    <!-- <img src="./img/Challenge.webp" alt="Snow" style="width:100%;"> -->
+
+    
+
+      <div class="container-fluid Yoga_Heading">
+        <p class="Yoga-2vw">MEMBER-EXCLUSIVE</p>
+        <h2 class="Yoga-3vw">COURSES</h2>
+        <h5 class="Yoga-2vw">Hone your skills with our professionally trained <br> teachers who are passionate about yoga</h5>
+        
+        </div>
+      
+      
+        <div class="container text-center">
+          <div class="row Yoga-2vw">
+            <div class="col-sm">
+              <a href="table.html">yoga for beginners</a> 
+            </div>
+            <div class="col-sm">
+              <a href="">yoga for intermediate</a>  
+            </div>
+            <div class="col-sm">
+              <a href="">yoga for advanced</a> 
+            </div>
+          </div>
+        </div>
+    
+<div class="Yoga_HeaderCol">
+<div class="Yoga_HeaderTitle Yoga-2vw">EXPERTS TO HELP YOU</div>
+</div>
+<br><br>
+   <div class="container-fluid Yoga_Container">
+    <div class="row">
+      <div class="col">
+        <!-- <img src="./img/line.jpg" class="img-fluid" alt="Responsive image"> -->
+        <img class="img-fluid Yoga_img" src="img/mind_therapy_web.png" alt="mind_therapy" width="575" height="253">
+      </div>
+      <div class="col">
+        <img class="img-fluid Yoga_img" src="img/psychiarist_web.png" alt="mind_therapy" width="575" height="253">
+      </div>
+    </div>
+   </div>
+
+   <br><br><br>
+   <img src="./img/line.jpg" class="img-fluid" alt="Responsive image">
+   <img src="./img/image2.png" class="img-fluid" alt="Responsive image">
+   <img src="./img/images3.png" class="img-fluid" alt="Responsive image">
+
+   <br><br><br>
+
+
+   <!-- footer -->
+   <div class="footer"style="background-color:#000">
+    <div class="container py-4" >
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
+                        <div class="single-footer-widget">
+                            <a href="#">
+                                <img src="https://static.cure.fit/assets/images/cf-logo.svg" alt="">
+                            </a><br>
+                            <p class="description">
+                                At cure.fit, we make group workouts fun, daily food healthy & tasty, mental fitness easy with yoga & meditation, and medical & lifestyle care hassle-free. #BeBetterEveryDay
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-4 col-lg col-xl-3 col-xs-">
+                        <div class="single-footer-widget">
+                            <ul class="quick_links" >   
+                                <li> 
+                                <a href='#' rel="" target="_blank">CONTACT US</a>
+                                </li>
+                                <li>
+                                    <a href="#" rel="" target="_blank">BLOG</a>
+                                </li>
+                                <li>
+                                    <a href="#" rel="" target="_blank">CULT FRANCHISE</a>
+                                </li>
+                                <li>
+                                    <a href="#" rel="" target="_blank">PARTNER.FIT</a>
+                                </li>
+                                <li>
+                                    <a href="#" rel="" target="_blank">TALKS</a>
+                                </li>
+                                <li>
+                                    <a href="#" rel="" target="_blank">CAREERS</a>
+                                </li>
+                            </ul>
+
+                          
+
+                        </div>
+                    </div>
+                    
+                        <div class="play-store-container col-sm-3">
+                            <div class="app-store-image col-xs-6">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/app-store.svg" alt="Download curefit app on apple play store">
+                                </div>
+                            </div>
+                            <div class="play-store-image col-xs-6 ">
+                                <div class="lazyload-wrapper float-right">
+                                    <img src="https://static.cure.fit/assets/images/play-store.svg" alt="Download curefit app on google play store">
+                                </div>
+                            </div>
+                        </div>
+                           
+                           
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+  <!-- /footer -->
+
+  <!-- <div class="modal fade" id="loginmodal" role="dialog" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content care-font-MSB">
+            <div class="px-2 py-2">
+                <a id="care-close-btn" data-bs-dismiss="modal"><img class="care-float-R" src="./icons/care-close.png" alt="" srcset=""></a>
+            </div>
+            <div class="modal-body py-5 px-5" align="center">
+
+                <img src="">
+                <span class="h1 ">Easy fit</span>
+                <br><br><br><br>
+                <form id=care-log-form>
+                    <input class="care-form-inputfield border-bottom " type="email" name="email" id="care-log-email"
+                        placeholder="   Email"><br><br>
+                    <input class="care-form-inputfield border-bottom " type="password" name="password" id="care-log-pass"
+                        placeholder="   Password"><br>
+                    <br>
+                    <span id="login-error"></span>
+                    <br><br>
+                    <a class="btn btn-primary" id="care-login-btn"  onclick="$('#loginmodal').modal({'backdrop': 'static'});"><span class="h4">Login</span></a><br>
+                </form>
+            </div>
+            <a class="btn btn-light px-5 " href="#registermodal" data-bs-toggle="modal"
+                data-bs-dismiss="modal"><span class="h4">Create New Account</span></a>
+        </div>
+    </div>
+</div> -->
+
+
+
+<script>
+  $(document).ready(function(){
+      //register ajax
+      $("#reg-save-btn").on("click",function(){
+          var fname = $("#yoga-reg-name").val();
+          var fmail = $("#yoga-reg-email").val();
+          var fage = $("#yoga-reg-age").val();
+          var fpass = $("#yoga-reg-pass").val();
+
+          $.ajax({
+              url :"http://localhost:8080/api-Insert",
+              type:"POST",
+              data: {uname:fname, uemail:fmail, uage:fage, upass:fpass},
+              success:function(data){
+                  if(data==1)
+                  {
+                      $("#yoga-reg-result").html("Register successfully");
+                      $("#yoga-reg-result").css("color","#34F458");
+                      $("#yoga-reg-form")[0].reset();
+                  //    $("#result").css("color","");
+
+                  }else{
+                      $("#yoga-reg-result").html("data not inserted");
+                      $("#yoga-reg-result").css("color","#ff0000");
+                  }
+              }
+          });
+      });
+     // login ajax
+      $("#login-btn").on("click",function(){
+          var logmail = $("#email1").val();
+          var logpass = $("#password1").val();
+          //console.log(logmail,logpass);
+          $.ajax({
+              url :"http://localhost:8080/api-login",
+               //url :"apilogin.php",
+              
+              type:"POST",
+              data: {lemail:logmail, lpass:logpass},
+              success:function(data){
+                  if(data==0)
+                  {
+                    $("#result").html("Username or password incorrect");
+                      $("#result").css("color","#ff0000");
+                     
+             
+
+                  }else{
+                      
+                    $("#result").html("login successfully");
+                      $("#result").css("color","#34F458");
+                      $("#loginForm")[0].reset();
+                      localStorage.token = data['token'];
+                   
+                  }
+              }
+          });
+      });
+  });
+
+</script>
+ 
+    <!-- End your project here-->
+    <script>
+      (function () {
+  'use strict'
+
+  if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+    var msViewportStyle = document.createElement('style')
+    msViewportStyle.appendChild(
+      document.createTextNode(
+        '@-ms-viewport{width:auto!important}'
+      )
+    )
+    document.head.appendChild(msViewportStyle)
+  }
+
+}())
+    </script>
+    <!-- MDB -->
+   
+    <!-- Modal -->
+
+
+  </body>
+</html>

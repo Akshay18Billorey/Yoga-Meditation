@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // register ajax
+            $("#save-btn").on("click",function(){
+                var fname = $("#name").val();
+                var fmail = $("#email").val();
+                var fage = $("#age").val();
+                var fpass = $("#pass").val();
+
+                $.ajax({
+                    url :"http://localhost:8080/api-Insert",
+                    type:"POST",
+                    data: {uname:fname, uemail:fmail, uage:fage, upass:fpass},
+                    success:function(data){
+                        if(data==1)
+                        {
+                            $("#result-register").html("data inserted successfully");
+                        //    $("#result").css("color","");
+
+                        }else{
+                            $("#result-register").html("data not inserted");
+                        
+                        }
+                    }
+                });
+            });
+            // login ajax
+            $("#login-btn").on("click",function(){
+                var logmail = $("#login-email").val();
+                var logpass = $("#login-pass").val();
+                //console.log(logmail,logpass);
+                $.ajax({
+                    url :"http://localhost:8080/api-login",
+                     //url :"apilogin.php",
+                    
+                    type:"POST",
+                    data: {lemail:logmail, lpass:logpass},
+                    success:function(data){
+                        if(data==1)
+                        {
+                            $("#result-login").html("login successfully");
+                        //    $("#result").css("color","");
+                            console.log(data);
+
+                        }else{
+                            $("#result-login").html("Username or password incorrect");
+                            //console.log(data);
+                           
+                            localStorage.token = data['token'];
+
+                        
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div>
+        <form id="insert-form" style="float: left;">
+
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="text" id="email" placeholder="Email"><br>
+            <input type="text" id="age" placeholder="Age"><br>
+            <input type="text" id="pass" placeholder="Password"><br>
+            <input type="button" value="Register here" id="save-btn">
+
+            <span id="result-register"></span>
+        </form>
+        <form id="login-form" >
+
+            
+            <input type="text" id="login-email" placeholder="Email"><br>
+            <input type="text" id="login-pass" placeholder="Password"><br>
+            <input type="button" value="login" id="login-btn">
+            <input type="button" value="logout" id="logout-btn">
+
+
+            <span id="result-login"></span>
+        </form>
+    </div>
+    
+
+    
+
+    
+</body>
+</html>
