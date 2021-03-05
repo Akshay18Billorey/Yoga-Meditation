@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css ">  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/validdation.js"></script>
+    <script src="./js/Yoga-Ajax.js"></script> -->
+    
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- jquery -->
+    <script src="./jquery/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        /* .column_1{
+                background:  #999999;
+                padding: 40px 50px;
+                 /* clip-path: polygon(0 0, calc(100% - 5vw) 0, calc(100% - 0px) 100%, 0 100%); 
+                margin-right: -5vw;  
+
+            }
+            .column_2{
+                 /* clip-path: polygon(15px 0, 100% 0, 100% 100%, 10vw 100%); 
+                 margin-left: -5vw;  
+            } */
+            /* .heading{
+                color: cornsilk;
+                font-weight: 300;
+                font-size: 28px;
+              
+            }
+            .content_para{
+                font-size: 12px;
+                margin: 20px 0px;
+                color: #fff;
+                letter-spacing: 0.25px;
+            }
+            img{
+                width: 100%;
+            }
+            .relative{
+                position: relative;
+            }
+            .absolute{
+                position: absolute;
+            } */
+            .header{
+                /* background: #004080; */
+                opacity: 0.55;
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+                max-height: 70px;
+    
+            }
+            ul{
+                padding: 10px;
+            }
+
+         .navbar-inverse .navbar-toggle {
+             margin: 18px 30px;
+             border-color: black;
+         }
+         .navbar-inverse .navbar-nav>li>a {
+            font-size: 16px;
+            color:black;
+           
+         }
+         .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: blue;
+    /* background-color: transparent; */
+}
+        /* @media (min-width: 1052px){
+        .navbar-nav {
+           float: right;
+           margin: 0;
+        }
+    } */
+    @media (max-width: 1000px) {
+    /* .navbar-header {
+        float: none;
+    } */
+    .navbar-toggle {
+        display: block;
+    }
+    /* .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    } */
+    .navbar-collapse.collapse:not(.in) {
+        display: none!important;
+    }
+    
+    /* .navbar-nav {
+        float: right;
+        margin: 7.5px -15px;
+    } */
+    /* .navbar-nav>li {
+        float: right;
+    } */
+    /* .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    } */
+}
+   /* .box{
+       position: absolute;
+       background-color: #fff;
+       max-width: 500px;
+      z-index: 1;
+      padding: 0px 11px;
+      margin: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 120%);
+
+   } */
+   .navbar-inverse .navbar-toggle .icon-bar {
+    background-color:black;
+}
+   /* .parent_box{
+       display: flex;
+       justify-content: center;
+
+   }
+   .box_heading{
+       color: #996633;
+       flex-wrap: wrap;
+       font-weight: 300;
+       text-align: center;
+   }
+   .box_content{
+       color: #996633;
+       flex-wrap: wrap;
+       font-weight: 300;
+       text-align: center;
+   } */
+   @media (max-width: 768px) {
+       .parent_box{
+           display: none;
+       }
+       
+   }
+    </style>
+    <div class="header">
+        <nav class="navbar navbar-inverse" style="width: 100%;background: white;border: none;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#" ><img src="./img/images.jpg" style="width: 38px;height: 42px;margin-left: 5rem;"></a>
+              </div>
+              <!-- width="38" height="42" -->
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav" style="float: right;">
+                  <li class=""><a href="#">Yoga</a></li>
+                  <li><a href="#">Meditation</a></li>
+                  <!-- <li><a href="#">E-Shop</a></li>
+                  <li><a href="#">Dental Courses</a></li>
+                  <li><a href="#">Customer Reviews</a></li>
+                  <li><a href="#">Our teeth</a></li> -->
+                  <li><a href="#">Login</a></li>
+                  <!-- <img src="./img/user-image.svg" style="width: 38px;height: 42px;margin-left: 5rem;"> -->
+                  <!-- <li><a href="#">Login</a></li> -->
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+    </div>
+</body>
+</html>

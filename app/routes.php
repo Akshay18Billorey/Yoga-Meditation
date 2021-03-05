@@ -51,6 +51,14 @@ return function (App $app){
         require_once('ImagePicker.html');
         return $response;
         });
+    $app->get('/How-to-Meditate',function(RequestInterface $request, ResponseInterface $response, array $args){
+        require_once('How-to-Meditate.html');
+        return $response;
+        });
+    $app->get('/Science-of-Meditation',function(RequestInterface $request, ResponseInterface $response, array $args){
+        require_once('Science-of-Meditation.html');
+        return $response;
+        });
         
 
 
